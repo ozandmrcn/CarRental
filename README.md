@@ -51,12 +51,12 @@ npm install
 npm run dev
 ```
 ### Setup NOTES:
-- ** API for Car Datas **
-- [Open Data Soft](https://public.opendatasoft.com/explore/dataset/all-vehicles-model/api/)
+-  API for Car Datas:
+[Open Data Soft](https://public.opendatasoft.com/explore/dataset/all-vehicles-model/api/)
 
-- ** API for Car Photos **
-- [Imagin Studio](https://docs.imagin.studio/guides/getting-images/embedding-in-your-website)
-- 
+- API for Car Photos:
+[Imagin Studio](https://docs.imagin.studio/guides/getting-images/embedding-in-your-website)
+
 > ⚠️ This project uses external APIs to fetch car data and images.  
 > ⚠️ Ensure your environment can access these APIs.  
 > ⚠️ No backend installation is required; just start the dev server with:  
