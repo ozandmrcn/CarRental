@@ -374,6 +374,10 @@
   pointer-events: none;
 }
 
+.mylogo {
+  filter: brightness(0) invert(1);
+}
+
 /* Responsive design */
 @media (max-width: 1200px) {
   .pagination-item {

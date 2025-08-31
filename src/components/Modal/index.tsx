@@ -22,13 +22,12 @@ const Modal: FC<IProps> = ({ car, close, isOpen }) => {
             exit={{ scale: 0 }}
             className="bg-white p-6 relative max-w-xl max-h-[90vh] rounded-2xl flex flex-col gap-5 shadow-xl overflow-auto w-[95%] sm:min-w-[576px] min-h-[70vh]"
           >
-            <button>
-              <img
-                src="/close.svg"
-                alt="close-btn"
-                className="cursor-pointer p-1 absolute end-1 top-1 z-10 bg-white rounded-full"
-                onClick={close}
-              />
+            <button
+              onClick={close}
+              name="close"
+              className="cursor-pointer p-1 absolute end-1 top-1 z-10 bg-white rounded-full"
+            >
+              <img src="/close.svg" alt="close-btn" />
             </button>
 
             {/* Car Images */}

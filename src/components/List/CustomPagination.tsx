@@ -138,6 +138,7 @@ const CustomPagination: React.FC<CustomPaginationProps> = ({
   return (
     <div className="pagination">
       <button
+        name="previous page"
         onClick={handlePrevious}
         disabled={currentPage === 1}
         className={`pagination-item ${currentPage === 1 ? "disabled" : ""}`}
@@ -148,6 +149,7 @@ const CustomPagination: React.FC<CustomPaginationProps> = ({
 
       {getPageNumbers().map((page, index) => (
         <button
+          name="page"
           key={index}
           onClick={() => handlePageClick(page)}
           className={`pagination-item ${
@@ -161,6 +163,7 @@ const CustomPagination: React.FC<CustomPaginationProps> = ({
       ))}
 
       <button
+        name="next page"
         onClick={handleNext}
         disabled={currentPage === totalPages}
         className={`pagination-item ${

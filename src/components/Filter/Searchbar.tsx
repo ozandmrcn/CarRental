@@ -45,8 +45,10 @@ const Searchbar: FC = () => {
     >
       <div className="searchbar-item items-end">
         <div className="w-full flex flex-col">
-          <label>Brand</label>
+          <label htmlFor="make">Brand</label>
           <ReactSelect
+            isClearable
+            inputId="make"
             value={{ label: make, value: make }}
             onChange={(option) => setMake(option?.value as string | null)}
             options={options}
@@ -55,13 +57,17 @@ const Searchbar: FC = () => {
           />
         </div>
 
-        <button type="submit" className="ml-3 sm:hidden cursor-pointer">
+        <button
+          name="search"
+          type="submit"
+          className="ml-3 sm:hidden cursor-pointer"
+        >
           <img src="/search.svg" alt="search-icon" className="size-[40px]" />
         </button>
       </div>
 
       <div className="searchbar-item flex flex-col items-start">
-        <label>Model</label>
+        <label htmlFor="model">Model</label>
 
         <div className="w-full flex">
           <div className="absolute ml-3 mt-1">
@@ -73,6 +79,8 @@ const Searchbar: FC = () => {
           </div>
 
           <input
+            name="model"
+            id="model"
             value={(model as string) || ""}
             onChange={(e) => setModel(e.target.value)}
             type="text"
@@ -80,7 +88,7 @@ const Searchbar: FC = () => {
             placeholder="Search for a model"
           />
 
-          <button type="submit" className="ml-3 cursor-pointer">
+          <button name="search" type="submit" className="ml-3 cursor-pointer">
             <img src="/search.svg" alt="search-icon" className="size-[40px]" />
           </button>
         </div>

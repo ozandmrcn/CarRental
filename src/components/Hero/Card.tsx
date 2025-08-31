@@ -31,7 +31,7 @@ const Card: FC<Props> = ({ car }) => {
       <div>
         <img
           src={generateImage(car, "28")}
-          alt="car-image"
+          alt={car.make + " " + car.model}
           className="w-full h-full object-contain min-h-[200px]"
         />
       </div>
@@ -48,6 +48,7 @@ const Card: FC<Props> = ({ car }) => {
           className="hidden group-hover:block h-full items-center"
         >
           <Button
+            name="more"
             text="More"
             type="button"
             designs="w-full text-white mt-3"

@@ -12,7 +12,12 @@ const Hero: FC = () => {
           Elevate your car rental experience with Golden Options and make every
           moment truly special.
         </p>
-        <Button text="Explore Cars" designs="mt-10" type="button" />
+        <Button
+          name="Explore Cars"
+          text="Explore Cars"
+          designs="mt-10"
+          type="button"
+        />
       </div>
 
       <div className="flex justify-center">
@@ -27,7 +32,7 @@ const Hero: FC = () => {
           }}
           transition={{ duration: 0.5 }}
           src="/hero.png"
-          className="object-contain"
+          className="object-contain xl:w-[600px] xl:h-[477.5px]"
           alt="graybmw"
         />
       </div>

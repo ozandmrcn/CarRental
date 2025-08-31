@@ -1,6 +1,7 @@
 import type { FC } from "react";
 
 interface IProps {
+  name?: string;
   text: string;
   designs?: string;
   disabled?: boolean;
@@ -8,10 +9,11 @@ interface IProps {
   fn?: () => void;
 }
 
-const Button: FC<IProps> = ({ text, designs, type, disabled, fn }) => {
+const Button: FC<IProps> = ({ name, text, designs, type, disabled, fn }) => {
   return (
     <button
       type={type}
+      name={name}
       className={`custom-btn ${designs}`}
       disabled={disabled}
       onClick={fn}
